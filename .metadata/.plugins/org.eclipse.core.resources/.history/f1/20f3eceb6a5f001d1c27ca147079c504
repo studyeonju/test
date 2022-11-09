@@ -1,0 +1,9 @@
+package com.example.controller;
+
+public class RedisSampleController {
+	@GetMapping("/getSessionId")
+    public String getSessionId(HttpSession session) {
+        return session.getId();
+    }
+
+}
